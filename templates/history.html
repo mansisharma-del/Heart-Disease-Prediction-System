@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction History</title>
+
+    <link rel="stylesheet" href="/static/css/history.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top-bar">
+
+            <div>
+                <h1 class="page-title">Prediction History</h1>
+                <p class="subtitle">
+                    Review all your previous heart disease prediction records.
+                </p>
+            </div>
+
+            <a href="/prediction" class="btn home-btn">
+                ← Back to predict
+            </a>
+
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Date</th>
+                        <th>Age</th>
+                        <th>Blood Pressure</th>
+                        <th>Cholesterol</th>
+                        <th>Max HR</th>
+                        <th>Result</th>
+                        <th>Confidence</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="historyBody">
+
+                    <!-- Data will come from history.js -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="/static/js/history.js"></script>
+
+</body>
+
+</html>

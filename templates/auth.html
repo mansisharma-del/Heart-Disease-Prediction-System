@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartCare AI | Authentication</title>
+
+    <link rel="stylesheet" href="/static/css/auth.css">
+    <link rel="icon" type="image/png" href="/static/image/favicon.png">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+
+        <!-- Left Side -->
+        <div class="left-panel">
+
+            <h1>❤️ HeartCare AI</h1>
+
+            <!-- <p>
+                AI Powered Heart Disease Prediction System
+            </p> -->
+
+            <div class="info-box">
+
+                <h3>Welcome!</h3>
+
+                <!-- <p>
+                    Predict heart disease risk using Machine Learning,
+                    securely save your prediction history,
+                    monitor reports and access your dashboard anytime.
+                </p> -->
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="right-panel">
+
+            <!-- Tabs -->
+            <div class="tabs">
+
+                <button
+                    id="signupTab"
+                    class="tab active"
+                    onclick="showSignup()">
+
+                    Sign Up
+
+                </button>
+
+                <button
+                    id="loginTab"
+                    class="tab"
+                    onclick="showLogin()">
+
+                    Login
+
+                </button>
+                <div id="messageBox" class="message-box"></div>
+
+            </div>
+            
+
+            <!-- Signup Form -->
+            <div
+                id="signupSection"
+                class="form-section">
+                
+                <form id="signupForm" autocomplete="off">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Full Name"
+                        autocomplete="name"
+                        required>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Email Address"
+                        autocomplete="off"
+                        required>
+
+                    <input
+                        type="text"
+                        id="phone"
+                        placeholder="Phone Number"
+                        autocomplete="off"
+                        required>
+
+                    
+
+                    <div class="password-box">
+                        <input
+                            type="password"
+                            id="signupPassword"
+                            placeholder="Password"
+                            autocomplete="new-password"
+                            required>
+                         
+                        <button
+                            type="button"
+                            class="toggle-btn"
+                            onclick="togglePassword('signupPassword', this)">
+
+
+                        </button>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Create Account
+                    </button>
+
+
+                </form>
+
+                <p class="switch-text">
+
+                    Already have an account?
+
+                    <span onclick="showLogin()">
+
+                        Login
+
+                    </span>
+
+                </p>
+
+            </div>
+
+            <!-- Login Form -->
+            <div
+                id="loginSection"
+                class="form-section hidden">        
+
+                <form id="loginForm" autocomplete="off">
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Email"
+                        autocomplete="off"
+                        required>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Password"
+                            autocomplete="new-password"
+                            required>
+
+                        <button
+                            type="button"
+                            class="toggle-btn"
+                            onclick="togglePassword('loginPassword', this)">
+
+
+                        </button>
+
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Login
+                    </button>
+
+                </form>
+
+                <p class="switch-text">
+
+                    Don't have an account?
+
+                    <span onclick="showSignup()">
+
+                        Create Account
+
+                    </span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/static/js/auth.js"></script>
+
+</body>
+
+</html>

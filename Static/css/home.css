@@ -1,0 +1,320 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   
+}
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    border-radius:10px;
+    margin:0px;
+    padding:8px;
+    /* background: white; */
+
+    /* background: linear-gradient(135deg, #094f70 35%, #8daedcbe 100%); */
+    /* background: linear-gradient(135deg, #094f70 35%, #8daedcbe 100%); */
+}
+
+/* ---------------- Header ---------------- */
+
+
+
+header{
+
+    background: linear-gradient(135deg, #094f70 35%, #8daedcbe 100%);
+    /* padding:55px 20px; */
+
+    padding-top: 90px;
+
+    text-align:center;
+    height: 300px;
+
+    color:white;
+    border-radius:10px;
+    font-size: 20px;
+    
+
+    /* border:2px solid black; */
+    box-shadow: 0 4px 8px black;
+
+
+}
+
+header h1{
+
+    font-size:60px;
+    margin-bottom:15px;
+
+}
+
+header p{
+
+    font-size:15px;
+
+}
+
+/* ---------------- Hero ---------------- */
+
+.hero{
+
+    background: linear-gradient(135deg, #094f70 20%, #8daedcbe 100%);
+
+    display:flex;
+    justify-content:center;
+
+    /* margin:40px 0; */
+    /* padding-bottom: 40px; */
+    border-radius:10px;
+    margin : 0px;
+
+}
+
+.glass-card{
+
+    width:600px;
+
+    background:rgba(255, 255, 255, 0.607);
+
+    border-radius:20px;
+
+    padding:45px;
+    margin : 40px 0;
+    
+
+    text-align:center;
+    font-size: 25px;
+    border:2px solid black;
+    box-shadow: 0 4px 8px black;
+    
+
+}
+
+.glass-card h2{
+
+    color:#124e78;
+
+    margin-bottom:20px;
+
+    font-size:34px;
+
+}
+
+.glass-card p{
+
+    color:#555;
+
+    line-height:55px;
+
+    font-size:18px;
+
+}
+
+/* ---------------- Buttons ---------------- */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    margin:25px 10px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.login-btn{
+
+    background:white;
+
+    color:#124e78;
+
+    border:2px solid #124e78;
+
+}
+
+.login-btn:hover{
+
+    background:#124e78;
+
+    color:white;
+
+}
+
+.signup-btn{
+
+    background:#124e78;
+
+    color:white;
+
+}
+
+.signup-btn:hover{
+
+    background:#0d3d61;
+
+}
+
+.predict-btn{
+
+    background:#124e78;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+.predict-btn:hover{
+
+    background:#0d3d61;
+
+}
+
+/* ---------------- Features ---------------- */
+
+.features{
+
+    width:100%;
+    height: 400px;
+
+    /* margin:70px auto; */
+
+    display:grid;
+    /* text-align: center; */
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+    margin : 0;
+    background: linear-gradient(135deg, #094f70 20%, #8daedcbe 100%);
+    border-radius:10px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    /* border:2px solid black; */
+    box-shadow: 0 4px 8px black;
+    
+
+}
+
+.feature-card{
+
+    background:rgba(255, 255, 255, 0.607);
+
+    border-radius:18px;
+
+    /* padding:40px 40px; */
+    padding-top: 100px;
+    margin:50px 0;
+
+    text-align:center;
+
+    /* box-shadow:0 5px 18px rgba(0,0,0,.12); */
+    box-shadow: 0 4px 8px black;
+    border:2px solid black;
+    
+
+}
+
+.feature-card h3{
+
+    color:#124e78;
+
+    margin-bottom:18px;
+    font-size: 30px;
+
+}
+
+.feature-card p{
+
+    color:#555;
+
+    line-height:40px;
+
+}
+
+/* ---------------- How It Works ---------------- */
+
+.how{
+
+    width:90%;
+
+    margin:80px auto;
+
+    text-align:center;
+
+}
+
+.how h2{
+
+    color:#124e78;
+
+    margin-bottom:45px;
+
+    font-size:36px;
+
+}
+
+.steps{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.step{
+
+    background:white;
+
+    padding:22px 35px;
+
+    border-radius:15px;
+
+    font-weight:bold;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+
+}
+
+/* ---------------- Footer ---------------- */
+
+footer{
+
+    /* margin-top:80px; */
+    background: linear-gradient(135deg, #094f70 35%, #8daedcbe 100%);
+
+
+    color:white;
+
+    padding:25px;
+    font-size: 20px;
+
+    text-align:center;
+    border-radius:10px;
+    /* border:2px solid black; */
+    box-shadow: 0 4px 8px black;
+
+
+}

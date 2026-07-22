@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#094f70 35%,#8daedcbe 100%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.dashboard-container{
+    width:95%;
+    max-width:1250px;
+
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+#welcome{
+    color:#fff;
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+    letter-spacing:1px;
+}
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.prediction-btn{
+    background:white;
+    color:#094f70;
+    border:1px solid rgba(255,255,255,.3);
+}
+
+.prediction-btn:hover{
+    background:#dff5ff;
+    transform:translateY(-2px);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+    margin-bottom:45px;
+}
+
+.card{
+    background:rgba(255,255,255,.95);
+    border-radius:15px;
+    padding:28px 20px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    color:#094f70;
+    font-size:20px;
+    margin-bottom:18px;
+}
+
+.card p{
+    font-size:34px;
+    font-weight:bold;
+    color:#333;
+}
+
+.quick-links{
+    text-align:center;
+}
+
+.quick-links h2{
+    color:#fff;
+    margin-bottom:25px;
+}
+
+.quick-links button{
+
+    background:#fff;
+    color:#094f70;
+
+    border:none;
+    border-radius:10px;
+
+    padding:14px 28px;
+    margin:10px;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.quick-links button:hover{
+
+    background:#0b6d94;
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:768px){
+
+    #welcome{
+        font-size:28px;
+    }
+
+    .dashboard-container{
+        padding:25px;
+    }
+
+    .card p{
+        font-size:28px;
+    }
+
+    .quick-links button{
+        width:100%;
+        margin:10px 0;
+    }
+
+}
