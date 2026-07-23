@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from database.database import get_db
 from database.models import User
 from database.schemas import UserUpdate
-from utils.auth import verify_token
+from utils.jwt_handler import verify_token
 
 router = APIRouter(tags=["Profile"])
 
